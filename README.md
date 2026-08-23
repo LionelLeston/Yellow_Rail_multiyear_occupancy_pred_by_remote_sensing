@@ -1,0 +1,1 @@
+The code in this GitHub repository is for running analyses of multi-year occupancy of Yellow Rails, relating yearly occupancy to different classes of remotely sensed variables. This work is part of a publication submitted to the journal Avian Conservation and Ecology.
