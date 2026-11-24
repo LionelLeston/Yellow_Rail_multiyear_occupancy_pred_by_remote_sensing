@@ -1,1 +1,3 @@
+CSV files and rasters can be downloaded here after running the scripts “1_scripts/November 2026/2_Google_Earth_Engine_Scripts/extract-Dynamic-World-2016”, “1_scripts/November 2026/2_Google_Earth_Engine_Scripts/extract-Dynamic-World-2017”, “1_scripts/November 2026/2_Google_Earth_Engine_Scripts/extract-Dynamic-World-2018”, “1_scripts/November 2026/2_Google_Earth_Engine_Scripts/extract-Dynamic-World-2019” , and “1_scripts/November 2026/2_Google_Earth_Engine_Scripts/extract-Dynamic-World-2021” in Google Earth Engine.
 
+Dynamic World is a global raster land use classification layer at 10-m resolution that can be used to estimate year-specific land use/land cover near point counts.
