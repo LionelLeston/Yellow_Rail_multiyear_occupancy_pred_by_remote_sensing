@@ -1,1 +1,1 @@
-
+Use the Google Earth Engine script in “1_scripts/November 2026/2_Google_Earth_Engine_Scripts/extract-ALOS-DEM-for-calculating-SWI-MRVBF-TPI” to download ALOS digital elevation model. Then use SAGA-GIS to convert that raster to other terrain raster variables for SAGA Wetness Index (SWI), Multi Resolution Valley Bottom Flatness (MRVBF), and topographic position index (TPI). You can use the script “1_scripts/November 2026/2_Google_Earth_Engine_Scripts/extract-elevation-slope-TPI-aspect” to calculate slope and aspect from elevation but those were not used in this analysis.
