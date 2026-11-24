@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SAGA_METADATA>
+  <DATABASE>
+    <FIELDS>
+      <FIELD TYPE="LONGINT">locationC</FIELD>
+      <FIELD TYPE="LONGINT">nSitesUsed</FIELD>
+      <FIELD TYPE="DOUBLE">ALOS_dem_raster (RANGE)</FIELD>
+      <FIELD TYPE="DOUBLE">ALOS_dem_raster (SUM)</FIELD>
+      <FIELD TYPE="DOUBLE">ALOS_dem_raster (MEAN)</FIELD>
+      <FIELD TYPE="DOUBLE">ALOS_dem_raster (VARIANCE)</FIELD>
+      <FIELD TYPE="DOUBLE">ALOS_dem_raster (STDDEV)</FIELD>
+      <FIELD TYPE="DOUBLE">Topographic Wetness Index (RANGE)</FIELD>
+      <FIELD TYPE="DOUBLE">Topographic Wetness Index (SUM)</FIELD>
+      <FIELD TYPE="DOUBLE">Topographic Wetness Index (MEAN)</FIELD>
+      <FIELD TYPE="DOUBLE">Topographic Wetness Index (VARIANCE)</FIELD>
+      <FIELD TYPE="DOUBLE">Topographic Wetness Index (STDDEV)</FIELD>
+      <FIELD TYPE="DOUBLE">Topographic Position Index (RANGE)</FIELD>
+      <FIELD TYPE="DOUBLE">Topographic Position Index (SUM)</FIELD>
+      <FIELD TYPE="DOUBLE">Topographic Position Index (MEAN)</FIELD>
+      <FIELD TYPE="DOUBLE">Topographic Position Index (VARIANCE)</FIELD>
+      <FIELD TYPE="DOUBLE">Topographic Position Index (STDDEV)</FIELD>
+      <FIELD TYPE="DOUBLE">MRVBF (RANGE)</FIELD>
+      <FIELD TYPE="DOUBLE">MRVBF (SUM)</FIELD>
+      <FIELD TYPE="DOUBLE">MRVBF (MEAN)</FIELD>
+      <FIELD TYPE="DOUBLE">MRVBF (VARIANCE)</FIELD>
+      <FIELD TYPE="DOUBLE">MRVBF (STDDEV)</FIELD>
+      <FIELD TYPE="DOUBLE">MRRTF (RANGE)</FIELD>
+      <FIELD TYPE="DOUBLE">MRRTF (SUM)</FIELD>
+      <FIELD TYPE="DOUBLE">MRRTF (MEAN)</FIELD>
+      <FIELD TYPE="DOUBLE">MRRTF (VARIANCE)</FIELD>
+      <FIELD TYPE="DOUBLE">MRRTF (STDDEV)</FIELD>
+    </FIELDS>
+  </DATABASE>
+  <SOURCE></SOURCE>
+  <HISTORY saga-version="9.8.1">
+    <TOOL library="shapes_tools" id="18" name="Shapes Buffer">
+      <OPTION type="table_field" id="DIST_FIELD" name="Buffer Distance" index="-1">&lt;not set&gt;</OPTION>
+      <OPTION type="double" id="DIST_FIELD_DEFAULT" name="Default">150</OPTION>
+      <OPTION type="boolean" id="DISSOLVE" name="Dissolve Buffers">false</OPTION>
+      <OPTION type="integer" id="NZONES" name="Number of Buffer Zones">1</OPTION>
+      <OPTION type="double" id="DARC" name="Arc Vertex Distance [Degree]">5</OPTION>
+      <INPUT type="shapes" id="SHAPES" name="Shapes">
+        <TOOL library="pj_proj4" id="26" name="UTM Projection (Shapes)">
+          <OPTION type="grid_system" id="CRS_GRID_GRIDSYSTEM" name="Grid system" parms="CRS_PICKER">
+            <CELLSIZE>0</CELLSIZE>
+            <XMIN>0</XMIN>
+            <YMIN>0</YMIN>
+            <XMAX>0</XMAX>
+            <YMAX>0</YMAX>
+          </OPTION>
+          <OPTION type="choice" id="PROJ_TYPE" name="Projection Type" parms="CRS_DIALOG" index="50">Geographic Coordinates (Longitudes/Latitudes)</OPTION>
+          <OPTION type="choice" id="DATUM_DEF" name="Datum Definition" parms="CRS_DIALOG" index="0">Predefined Datum</OPTION>
+          <OPTION type="choice" id="DATUM" name="Predefined Datum" parms="CRS_DIALOG" index="0">WGS84</OPTION>
+          <OPTION type="boolean" id="OVER" name="Allow longitudes outside -180 to 180 Range" parms="CRS_DIALOG">false</OPTION>
+          <OPTION type="boolean" id="NO_DEFS" name="Ignore Defaults" parms="CRS_DIALOG">true</OPTION>
+          <OPTION type="boolean" id="PARALLEL" name="Parallel Processing">false</OPTION>
+          <OPTION type="boolean" id="COPY" name="Copy">true</OPTION>
+          <OPTION type="integer" id="UTM_ZONE" name="Zone">12</OPTION>
+          <OPTION type="boolean" id="UTM_SOUTH" name="South">false</OPTION>
+          <INPUT type="shapes" id="SOURCE" name="Source">
+            <FILE>E:\OSM Good Cumulative Effects\OSM 2024 Yellow Rail\OSM 2025 Yellow Rail Occupancy\0_data\0_raw\point counts\allYERAsites_May2025.shp</FILE>
+          </INPUT>
+          <OUTPUT type="shapes" id="TARGET" name="Target">Target</OUTPUT>
+        </TOOL>
+      </INPUT>
+      <OUTPUT type="shapes" id="BUFFER" name="Buffer">Target [Buffer]</OUTPUT>
+    </TOOL>
+  </HISTORY>
+  <FILE></FILE>
+  <DESCRIPTION></DESCRIPTION>
+  <PROJECTION>
+    <WKT2>PROJCRS["WGS 84 / UTM zone 12N",BASEGEODCRS["WGS 84",DATUM["World Geodetic System 1984",ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]]],CONVERSION["UTM zone 12N",METHOD["Transverse Mercator",ID["EPSG",9807]],PARAMETER["Latitude of natural origin",0,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8801]],PARAMETER["Longitude of natural origin",-111,ANGLEUNIT["degree",0.0174532925199433],ID["EPSG",8802]],PARAMETER["Scale factor at natural origin",0.9996,SCALEUNIT["unity",1],ID["EPSG",8805]],PARAMETER["False easting",500000,LENGTHUNIT["metre",1],ID["EPSG",8806]],PARAMETER["False northing",0,LENGTHUNIT["metre",1],ID["EPSG",8807]]],CS[Cartesian,2],AXIS["easting",east,ORDER[1],LENGTHUNIT["metre",1]],AXIS["northing",north,ORDER[2],LENGTHUNIT["metre",1]],ID["EPSG",32612]]</WKT2>
+    <PROJ>+proj=utm +zone=12 +datum=WGS84 +units=m +no_defs </PROJ>
+    <CODE authority="EPSG">32612</CODE>
+  </PROJECTION>
+</SAGA_METADATA>
