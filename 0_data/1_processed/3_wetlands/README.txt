@@ -1,1 +1,1 @@
-
+Contains estimates of mean probability that a given 10-m cell from the ABMI wetland probability layer is a wetland, within 150 m and 564 m (1 square kilometre) of each Yellow Rail point count, along with distance of that point count from the nearest upland cell (where wetland probability < 0.50).
