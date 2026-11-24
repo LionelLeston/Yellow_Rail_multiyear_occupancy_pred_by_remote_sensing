@@ -1,1 +1,3 @@
+CSV files and rasters can be downloaded here after running the scripts “1_scripts/November 2026/2_Google_Earth_Engine_Scripts/extract-Sentinel1-2016”, “1_scripts/November 2026/2_Google_Earth_Engine_Scripts/extract-Sentinel1-2017”, “1_scripts/November 2026/2_Google_Earth_Engine_Scripts/extract-Sentinel1-2018”, “1_scripts/November 2026/2_Google_Earth_Engine_Scripts/extract-Sentinel1-2019”, and “1_scripts/November 2026/2_Google_Earth_Engine_Scripts/extract-Sentinel1-2021” in Google Earth Engine.
 
+These data come from Synthetic Aperture Radar (SAR) at 10-m resolution and depending on the variable give estimates of surface/water roughness measured at particular times of year (e.g., cross-polarization ratio or DPOL) or estimates of seasonality of vegetation (delta-VH).
