@@ -1,1 +1,1 @@
-
+This CSV file notes time since the last fire within 150 m and 565 m (1 sq. kilometre) of each Yellow Rail point count. We explored but ultimately did not use time since fire in the final manuscript's analysis.
