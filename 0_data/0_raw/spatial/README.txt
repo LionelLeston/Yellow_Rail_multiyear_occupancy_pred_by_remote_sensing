@@ -1,1 +1,1 @@
-
+Spatial data folder contains a few GIS files used in creating map figures in "Dynamic Occupancy Modeling of a Declining Wetland Bird: The Importance of Annual Remote Sensing Data in Understanding Yellow Rail Population Dynamics".
