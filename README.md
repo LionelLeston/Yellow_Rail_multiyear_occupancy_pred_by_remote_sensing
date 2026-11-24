@@ -1,1 +1,4 @@
-The code in this GitHub repository is for running analyses of multi-year occupancy of Yellow Rails, relating yearly occupancy to different classes of remotely sensed variables. This work is part of a publication submitted to the journal Avian Conservation and Ecology.
+The code in this GitHub repository is for running analyses of multi-year occupancy of Yellow Rails, relating yearly occupancy to different classes of remotely sensed variables. This R project code was used in the manuscript “Dynamic Occupancy Modeling of a Declining Wetland Bird: The Importance of Annual Remote Sensing Data in Understanding Yellow Rail Population Dynamics” by Lionel Leston, Elly Knight, and Erin Bayne, submitted to the journal Avian Conservation and Ecology in 2026.
+
+Note: locations have been buffered by adding a small random value to latitude and longitude. However, the locations have been included to demonstrate how the code is run. Analysis results based on running locations with altered coordinates will produce different results to ours. The original data and locations are available for people who wish to collaborate with the Boreal Avian Modelling Centre.
+
